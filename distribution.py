@@ -38,7 +38,7 @@ Notice about this example:
 """
 import string
 Spain = input("Please enter a string of text (the bigger the better): ").lower()
-print("The distribution of characters in " + Spain + " is:")
+print('The distribution of characters in "' + Spain + '" is:')
 WhenInSpain = []
 for j in string.ascii_lowercase:
     if Spain.count(j) != 0:
