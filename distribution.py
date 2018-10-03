@@ -43,7 +43,9 @@ WhenInSpain = []
 for j in string.ascii_lowercase:
     if Spain.count(j) != 0:
         WhenInSpain.append(j*Spain.count(j))
-print(WhenInSpain)
+sortable = (sorted(WhenInSpain, key = len, reverse = True))
+for r in sortable:
+    print(r)
 """
 letters = list(Spain)
 if letters == 's':
