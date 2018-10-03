@@ -37,12 +37,13 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
-Spain = input("Please enter a string of text (the bigger the better): ").lower()
+Spain = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "' + Spain + '" is:')
+Spains = Spain.lower()
 WhenInSpain = []
 for j in string.ascii_lowercase:
-    if Spain.count(j) != 0:
-        WhenInSpain.append(j*Spain.count(j))
+    if Spains.count(j) != 0:
+        WhenInSpain.append(j*Spains.count(j))
 sortable = (sorted(WhenInSpain, key = len, reverse = True))
 for r in sortable:
     print(r)
